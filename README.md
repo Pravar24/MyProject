@@ -20,7 +20,6 @@ The system bridges high-level mission planning with low-level actuator control.
 
 ### Hardware-Software Interface
 ![System Architecture](./block_diagram.png)
-*(Note: Ensure your block diagram image is named 'block_diagram.png')*
 
 * **Flight Controller:** Cube Orange (Pixhawk 2.1) running ArduCopter firmware.
 * **Sensors:** IMU (Accel/Gyro), Barometer, GPS Module.
