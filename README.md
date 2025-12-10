@@ -19,7 +19,7 @@ I designed a **"Digital Twin"** simulation and an embedded control architecture 
 The system bridges high-level mission planning with low-level actuator control.
 
 ### Hardware-Software Interface
-![System Architecture](./block_diagram.png)
+![System Architecture](.images/block_diagram.png)
 
 * **Flight Controller:** Cube Orange (Pixhawk 2.1) running ArduCopter firmware.
 * **Sensors:** IMU (Accel/Gyro), Barometer, GPS Module.
@@ -59,11 +59,11 @@ $$U_1(t) = K_p \cdot e(t) + K_i \int e(\tau)d\tau + K_d \frac{de(t)}{dt}$$
 We validated the control law using a high-fidelity Simulink model. The results demonstrate the controller's robustness against dynamic physical changes.
 
 ### 1. The Challenge: Mass Depletion
-![Mass Depletion Graph](./mass_depletion.png)
+![Mass Depletion Graph](.images/mass_depletion.png)
 > **Physics:** The graph above shows the drone's total mass decreasing linearly from **22kg to 12kg** over a 200-second mission duration due to pesticide spraying.
 
 ### 2. The Solution: Altitude Stability
-![Altitude Response Graph](./altitude_response.png)
+![Altitude Response Graph](.images/altitude_response.png)
 > **Control Response:** Despite the 45% loss in mass (shown above), the PID loop successfully maintains the target altitude of **-30m**.
 > * **Settling Time:** ~5.0 seconds
 > * **Overshoot:** 0% (Stable Hover)
